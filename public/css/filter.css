@@ -1,0 +1,90 @@
+ .filterWrapper {
+   position: sticky;
+   top: 80px;
+   background-color: #fff;
+   z-index: 10;
+   display: flex;
+   align-items: center;
+ }
+ 
+ #filters {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   padding-top: 0.5rem;
+   overflow: hidden;
+  }
+  .filter-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   scroll-behavior: smooth;
+   margin-right: 0.7rem
+  }
+#filters .left-btn  {
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding:2px;
+  border: 0.5px solid black;
+  cursor: pointer;
+}
+#filters .right-btn {
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  top: 25%;
+  background-color: #fff;
+  padding:2px;
+  border: 0.5px solid black;
+  cursor: pointer;
+}
+ .filter {
+   text-align: center;
+   margin-right:0.5rem;
+   opacity: 0.7;
+   margin-left: 0.5rem
+ }
+
+ .filter:hover {
+   opacity: 1;
+ }
+
+ .filter a {
+   text-decoration: none !important;
+ }
+
+ .filter p {
+   font-size: 0.7rem;
+ }
+
+ .tax-info {
+   display: none;
+ }
+
+ .tax-toggle {
+   flex-shrink: 0;
+   border: 1px solid black;
+   border-radius: 1rem;
+   padding-inline: 0.5rem;
+   padding-block: 0.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 10px;
+   font-size: 0.8rem;
+ }
+
+ @media(min-width: 992px) {
+  .tax-toggle {
+    font-size: 1rem;
+    padding-inline: 1rem;
+   padding-block: 0.5rem;
+  }
+  .filter  {
+    margin-inline:1rem
+  }
+ }
