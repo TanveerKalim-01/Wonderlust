@@ -1,7 +1,7 @@
 <%- layout("layouts/boilerplate.ejs") %>
 
 <script>
-  const apiKey = "<%- process.env.MAPTILER_API_KEY %>";  // raw output for API key
+  const maptilerApiKey = "<%- process.env.MAPTILER_API_KEY %>";  // raw output for API key
 
   // Converting an object to JSON for use in JS
   const listing = <%- JSON.stringify(listing) %>;  // safe embedding of object without escaping
