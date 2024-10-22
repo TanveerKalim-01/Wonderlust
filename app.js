@@ -94,6 +94,10 @@ app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
 app.use("/filter", filterRouter);
 
+app.get("/", (req, res) => {
+  res.redirect("/listings")
+})
+
 // Catch-all for undefined routes
 app.all("*", (req, res, next) => {
   next(new ExpressError(404, "Page not found."));
